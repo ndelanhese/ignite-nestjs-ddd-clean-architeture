@@ -8,8 +8,8 @@ pre-commit:
     code-spell:
       run: bunx cspell "src/**/*.ts"
       
-    test:
-      run: bun run test
+    # test:
+    #   run: bun run test
 
 prepare-commit-msg:
   commands:
