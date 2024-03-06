@@ -14,5 +14,10 @@
 				"noStaticOnlyClass": "off"
 			}
 		}
+	},
+	"typescript": {
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": true
+		}
 	}
 }
