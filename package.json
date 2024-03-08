@@ -5,7 +5,6 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
-  "type": "module",
   "scripts": {
     "build": "nest build",
     "start": "nest start",
@@ -33,6 +32,7 @@
     "bcryptjs": "2.4.3",
     "child_process": "1.0.2",
     "crypto": "1.0.1",
+    "dayjs": "1.11.10",
     "passport-jwt": "4.0.1",
     "reflect-metadata": "0.2.1",
     "rxjs": "7.8.1",
@@ -46,6 +46,7 @@
     "@biomejs/biome": "1.5.3",
     "@commitlint/cli": "19.0.3",
     "@commitlint/config-conventional": "19.0.3",
+    "@faker-js/faker": "8.4.1",
     "@nestjs/cli": "10.3.2",
     "@nestjs/schematics": "10.1.1",
     "@nestjs/testing": "10.3.3",

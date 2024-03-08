@@ -1,0 +1,44 @@
+import { Entity } from "@core/entities/entity";
+import { Optional } from "@core/types/optional";
+import { UniqueEntityId } from "@core/value-objects/unique-entity-id";
+import { NotificationProps } from "./notification.types";
+
+export class Notification extends Entity<NotificationProps> {
+	static create(
+		props: Optional<NotificationProps, "createdAt">,
+		id?: UniqueEntityId,
+	) {
+		const notification = new Notification(
+			{
+				...props,
+				createdAt: props.createdAt ?? new Date(),
+			},
+			id,
+		);
+		return notification;
+	}
+
+	get recipientId() {
+		return this.props.recipientId;
+	}
+
+	get title() {
+		return this.props.title;
+	}
+
+	get content() {
+		return this.props.content;
+	}
+
+	get createdAt() {
+		return this.props.createdAt;
+	}
+
+	get readAt() {
+		return this.props.readAt;
+	}
+
+	read() {
+		this.props.readAt = new Date();
+	}
+}
