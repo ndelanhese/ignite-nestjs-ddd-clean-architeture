@@ -2,7 +2,7 @@ pre-commit:
   parallel: true
   commands:
     check-and-lint:
-      glob: "*.{ts,json}"
+      glob: "./src/*.{ts,json}"
       run: bun biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again
     
     code-spell:

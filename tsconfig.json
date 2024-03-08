@@ -1,21 +1,56 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
+	"compilerOptions": {
+		"module": "commonjs",
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "es2022",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"incremental": true,
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"strictBindCallApply": false,
+		"forceConsistentCasingInFileNames": false,
+		"noFallthroughCasesInSwitch": false,
+		"paths": {
+			"@forum-entities/*": ["./src/domain/forum/enterprise/entities/*"],
+			"@forum-events/*": ["./src/domain/forum/enterprise/events/*"],
+			"@notification-entities/*": [
+				"./src/domain/notification/enterprise/entities/*"
+			],
+			"@forum-repositories/*": [
+				"./src/domain/forum/application/repositories/*"
+			],
+			"@notification-repositories/*": [
+				"./src/domain/notification/application/repositories/*"
+			],
+			"@forum-use-cases/*": ["./src/domain/forum/application/use-cases/*"],
+			"@notification-use-cases/*": [
+				"./src/domain/notification/application/use-cases/*"
+			],
+			"@forum-value-objects/*": [
+				"./src/domain/forum/enterprise/value-objects/*"
+			],
+			"@notification-value-objects/*": [
+				"./src/domain/notification/enterprise/value-objects/*"
+			],
+			"@errors/*": ["./src/core/errors/use-case-error/*"],
+			"@notification-use-case-errors/*": [
+				"./src/domain/notification/application/use-case-error/*"
+			],
+			"@core/*": ["./src/core/*"],
+			"@test-repositories/*": ["./test/repositories/*"],
+			"@test-factories/*": ["./test/factories/*"],
+			"@test-utils/*": ["./test/utils/*"],
+			"@infra/*": ["./src/infra/*"],
+			"@/*": ["./src/*"]
+		},
+		"types": ["vitest/globals"]
+	}
 }
