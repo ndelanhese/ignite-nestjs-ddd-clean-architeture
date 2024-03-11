@@ -85,7 +85,7 @@ export class Question extends AggregateRoot<QuestionProps> {
 		this.touch();
 	}
 
-	set bestAnswerId(bestAnswerId: UniqueEntityId | undefined) {
+	set bestAnswerId(bestAnswerId: UniqueEntityId | undefined | null) {
 		if (!bestAnswerId) return;
 
 		if (

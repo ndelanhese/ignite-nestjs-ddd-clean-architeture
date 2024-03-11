@@ -4,11 +4,11 @@ import { Slug } from "@forum-value-objects/slug";
 
 export type QuestionProps = {
 	authorId: UniqueEntityId;
-	bestAnswerId?: UniqueEntityId;
+	bestAnswerId?: UniqueEntityId | null;
 	title: string;
 	content: string;
 	slug: Slug;
 	attachments: QuestionAttachmentList;
 	createdAt: Date;
-	updatedAt?: Date;
+	updatedAt?: Date | null;
 };

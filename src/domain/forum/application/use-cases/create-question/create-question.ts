@@ -4,11 +4,13 @@ import { Question } from "@forum-entities/question";
 import { QuestionAttachment } from "@forum-entities/question-attachment";
 import { QuestionAttachmentList } from "@forum-entities/question-attachment-list";
 import { QuestionsRepository } from "@forum-repositories/questions-repository";
+import { Injectable } from "@nestjs/common";
 import {
 	CreateQuestionUseCaseProps,
 	CreateQuestionUseCaseResponse,
 } from "./create-question.types";
 
+@Injectable()
 export class CreateQuestionUseCase {
 	constructor(private questionsRepository: QuestionsRepository) {}
 

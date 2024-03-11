@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
   "name": "John Doe",
-  "email": "john.does@gmail.com",
+  "email": "john.doe@gmail.com",
   "password": "123456"
 }
 
@@ -23,7 +23,6 @@ Content-Type: application/json
 }
 
 ###
-
 # @name create_question
 POST {{baseUrl}}/questions
 Content-Type: application/json
