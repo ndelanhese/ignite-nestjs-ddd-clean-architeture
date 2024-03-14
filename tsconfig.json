@@ -31,6 +31,8 @@
 				"./src/domain/notification/application/repositories/*"
 			],
 			"@forum-use-cases/*": ["./src/domain/forum/application/use-cases/*"],
+			"@forum-use-case-error/*": ["./src/domain/forum/application/use-case-errors/*"],
+			"@forum-cryptography/*": ["./src/domain/forum/application/cryptography/*"],
 			"@notification-use-cases/*": [
 				"./src/domain/notification/application/use-cases/*"
 			],
