@@ -2,5 +2,11 @@
 	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
 	"version": "0.2",
 	"language": "en, pt-BR",
-	"words": ["visualstudio", "Encrypter", "encrypter"]
+	"words": [
+		"encrypter",
+		"Encrypter",
+		"hasher",
+		"Hasher",
+		"visualstudio"
+	]
 }
